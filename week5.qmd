@@ -1,0 +1,73 @@
+---
+title: "seminar"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+did you know that Howard is a dog[^1]?
+
+[^1]: he is a Boston Terrier I believe she wants\[\^2\] I believe she wants\[\^2\]
+
+I believe she want[^2]
+
+[^2]: a dog
+
+## Headings
+
+# my_name
+
+## data wrangling
+
+library(dplyr) glimpse(mtcars)
+
+#\| echo: true glimpse(mtcars) view(mtcars)
+
+```{r}
+View(mtcars)
+```
+
+```         
+```
+
+```{r}
+#| echo: true
+2+2
+```
+
+```{r}
+#| echo: true
+data <- Number_of_people_with_and_without_energy_access_OWID_based_on_World_Bank_2021_
+```
+
+```{r}
+#| echo: true
+df <- Number_of_people_with_and_without_energy_access_OWID_based_on_World_Bank_2021_ %>% rename(Time = Year)
+```
+
+```{r}
+#| echo: true
+View(df)
+```
+
+```{r}
+
+```
